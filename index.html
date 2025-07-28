@@ -31,22 +31,40 @@
 
       <!-- Nav links OUTSIDE container -->
       <nav class="nav-links" id="nav-links">
-        <a href="#about">Buy</a>
-        <a href="#process">Rent</a>
-        <a href="#materials">Sell</a>
-        <a href="#faq">Agents</a>
-        <a href="#contact">About</a>
+        <a href="#about" data-lang="en">Buy</a>
+        <a href="#about" data-lang="es" style="display: none">Comprar</a>
+
+        <a href="#process" data-lang="en">Rent</a>
+        <a href="#process" data-lang="es" style="display: none">Rentar</a>
+
+        <a href="#materials" data-lang="en">Sell</a>
+        <a href="#materials" data-lang="es" style="display: none">Vender</a>
+
+        <a href="#faq" data-lang="en">Agents</a>
+        <a href="#faq" data-lang="es" style="display: none">Agentes</a>
+
+        <a href="#contact" data-lang="en">About</a>
+        <a href="#contact" data-lang="es" style="display: none">Acerca de</a>
       </nav>
     </header>
 
     <!-- HERO SECTION -->
     <section class="hero">
       <div class="hero-overlay">
-        <h1>The Top Properties For Sale</h1>
-        <p>
+        <h1 data-lang="en">The Top Properties For Sale</h1>
+        <h1 data-lang="es" style="display: none">
+          Las mejores propiedades a la venta
+        </h1>
+
+        <p data-lang="en">
           The place to find your properties for sale in Puerto Vallarata and
           Riviera Nayarit
         </p>
+        <p data-lang="es" style="display: none">
+          El lugar para encontrar propiedades en venta en Puerto Vallarta y
+          Riviera Nayarit
+        </p>
+
         <div class="search-wrapper" style="position: relative; width: 100%">
           <form class="search-form">
             <input
@@ -54,7 +72,7 @@
               placeholder="Search by city, neighborhood, or zip..."
               id="searchInput"
             />
-            <button type="submit">Search</button>
+            <button id="searchBtn" type="submit">Search</button>
           </form>
 
           <div id="suggestions" class="suggestion-box hidden"></div>
@@ -62,13 +80,71 @@
       </div>
     </section>
 
+    <section id="quienes-somos" class="about-section">
+      <div class="container">
+        <h2 data-lang="es">Quiénes Somos</h2>
+        <h2 data-lang="en" style="display: none">About Us</h2>
+
+        <p data-lang="es">
+          <strong>Aura Properties</strong> nos especializamos en la
+          administración integral de propiedades, brindando tranquilidad y
+          confianza a propietarios locales y extranjeros. Nuestro objetivo es
+          cuidar cada detalle de tu inversión como si fuera nuestra, ofreciendo
+          un servicio personalizado, transparente y profesional.
+        </p>
+        <p data-lang="en" style="display: none">
+          <strong>Aura Properties</strong> specializes in comprehensive property
+          management, providing peace of mind and trust to local and foreign
+          owners. Our goal is to care for every detail of your investment as if
+          it were our own, offering personalized, transparent, and professional
+          service.
+        </p>
+
+        <p data-lang="es">
+          Contamos con experiencia en renta, mantenimiento, supervisión de
+          servicios y atención a huéspedes, adaptándonos a las necesidades
+          específicas de cada cliente.
+        </p>
+        <p data-lang="en" style="display: none">
+          We have experience in rental, maintenance, service supervision, and
+          guest care, adapting to the specific needs of each client.
+        </p>
+
+        <p data-lang="es">
+          Estamos comprometidos con la excelencia, la honestidad y el trato
+          humano, para que tú no tengas que preocuparte por nada.
+        </p>
+        <p data-lang="en" style="display: none">
+          We are committed to excellence, honesty, and humane treatment so you
+          don't have to worry about anything.
+        </p>
+      </div>
+    </section>
+
     <!-- FEATURED FILTERS -->
     <section class="filters">
-      <div class="filter-item">For Sale</div>
-      <div class="filter-item">For Rent</div>
-      <div class="filter-item">Open Houses</div>
-      <div class="filter-item">New Listings</div>
-      <div class="filter-item">Luxury</div>
+      <div class="filter-item" data-lang="en">For Sale</div>
+      <div class="filter-item" data-lang="es" style="display: none">
+        En Venta
+      </div>
+
+      <div class="filter-item" data-lang="en">For Rent</div>
+      <div class="filter-item" data-lang="es" style="display: none">
+        En Renta
+      </div>
+
+      <div class="filter-item" data-lang="en">Open Houses</div>
+      <div class="filter-item" data-lang="es" style="display: none">
+        Casas Abiertas
+      </div>
+
+      <div class="filter-item" data-lang="en">New Listings</div>
+      <div class="filter-item" data-lang="es" style="display: none">
+        Nuevos Listados
+      </div>
+
+      <div class="filter-item" data-lang="en">Luxury</div>
+      <div class="filter-item" data-lang="es" style="display: none">Lujo</div>
     </section>
 
     <!-- MAIN CONTENT -->
@@ -76,89 +152,302 @@
       <section class="property-list">
         <div class="property-card">
           <img src="./public/house1.png" alt="House 1" />
-          <h3>$2,100,000</h3>
-          <p>4 Bed • 3 Bath • 2,800 sqft</p>
+          <h3 data-lang="en">$200 - $4000 USD</h3>
+          <h3 data-lang="es" style="display: none">$4,000 - $80,000 MXN</h3>
+          <p data-lang="en">4 Bed • 3 Bath • 2,800 sqft</p>
+          <p data-lang="es" style="display: none">
+            4 Recámaras • 3 Baños • 2,800 pies²
+          </p>
           <p>Los Angeles, CA</p>
         </div>
+
         <div class="property-card">
           <img src="./public/house2.png" alt="House 2" />
-          <h3>$1,350,000</h3>
-          <p>3 Bed • 2 Bath • 2,100 sqft</p>
+          <h3 data-lang="en">$150 - $3300 USD</h3>
+          <h3 data-lang="es" style="display: none">$3,000 - $66,000 MXN</h3>
+          <p data-lang="en">3 Bed • 2 Bath • 2,100 sqft</p>
+          <p data-lang="es" style="display: none">
+            3 Recámaras • 2 Baños • 2,100 pies²
+          </p>
           <p>Miami, FL</p>
         </div>
+
         <div class="property-card">
-          <img src="./public/house1.png" alt="House 1" />
-          <h3>$2,100,000</h3>
-          <p>4 Bed • 3 Bath • 2,800 sqft</p>
+          <img src="./public/house3.png" alt="House 3" />
+          <h3 data-lang="en">$135 - $2700 USD</h3>
+          <h3 data-lang="es" style="display: none">$2,700 - $54,000 MXN</h3>
+          <p data-lang="en">2 Bed • 2 Bath • 2,800 sqft</p>
+          <p data-lang="es" style="display: none">
+            2 Recámaras • 2 Baños • 2,800 pies²
+          </p>
           <p>Los Angeles, CA</p>
         </div>
+
         <div class="property-card">
-          <img src="./public/house2.png" alt="House 2" />
-          <h3>$1,350,000</h3>
-          <p>3 Bed • 2 Bath • 2,100 sqft</p>
+          <img src="./public/house4.png" alt="House 4" />
+          <h3 data-lang="en">$110 - $2000 USD</h3>
+          <h3 data-lang="es" style="display: none">$2,200 - $40,000 MXN</h3>
+          <p data-lang="en">3 Bed • 2 Bath • 2,100 sqft</p>
+          <p data-lang="es" style="display: none">
+            3 Recámaras • 2 Baños • 2,100 pies²
+          </p>
           <p>Miami, FL</p>
         </div>
-        <!-- Add more property cards -->
       </section>
 
       <aside class="sidebar">
         <div class="map-preview">
-          <h4>Explore by Map</h4>
+          <h4 data-lang="en">Explore by Map</h4>
+          <h4 data-lang="es" style="display: none">Explora por Mapa</h4>
           <img src="./public/map.png" alt="Map Preview" />
         </div>
         <div class="news-box">
-          <h4>Latest Real Estate News</h4>
-          <p>Check out the latest trends and insights.</p>
+          <h4 data-lang="en">Latest Real Estate News</h4>
+          <h4 data-lang="es" style="display: none">
+            Últimas Noticias Inmobiliarias
+          </h4>
+          <p data-lang="en">Check out the latest trends and insights.</p>
+          <p data-lang="es" style="display: none">
+            Consulta las últimas tendencias y novedades.
+          </p>
         </div>
       </aside>
     </main>
 
-    <section class="couple-section">
-      <!-- Left Content -->
-      <div class="left-pane">
-        <div class="left-content">
-          <h1>Find the Right Selling Option</h1>
-          <p>We're here to help you</p>
-        </div>
-      </div>
+    <section class="section">
+      <h2 data-lang="es">Servicios de Administración de Propiedades</h2>
+      <h2 data-lang="en" style="display: none">Property Management Services</h2>
 
-      <!-- Right Content -->
-      <div class="right-pane">
-        <img src="./public/couple.png" alt="Couple embracing" />
-      </div>
+      <div class="grid">
+        <div class="card">
+          <h3 data-lang="es">1. Inventario Fotográfico y Escrito</h3>
+          <h3 data-lang="en" style="display: none">
+            1. Photographic and Written Inventory
+          </h3>
+          <p data-lang="es">
+            Registro detallado del estado del inmueble al inicio del contrato.
+            Incluye informe firmado con respaldo fotográfico profesional.
+          </p>
+          <p data-lang="en" style="display: none">
+            Detailed report on property condition at contract start. Includes
+            signed report with professional photographic support.
+          </p>
+        </div>
 
-      <!-- Center Floating Cards -->
-      <div class="center-overlay">
-        <div class="info-card">
-          <h3>Property Management</h3>
-          <span
-            >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-            porta in odio id mollis.</span
-          >
+        <div class="card">
+          <h3 data-lang="es">2. Gestión de Pagos de Servicios</h3>
+          <h3 data-lang="en" style="display: none">2. Payment Management</h3>
+          <p data-lang="es">Administración mensual de pagos de servicios:</p>
+          <p data-lang="en" style="display: none">
+            Monthly management of utility payments:
+          </p>
+          <ul>
+            <li data-lang="es">Agua</li>
+            <li data-lang="en" style="display: none">Water</li>
+            <li data-lang="es">Electricidad (CFE)</li>
+            <li data-lang="en" style="display: none">Electricity (CFE)</li>
+            <li data-lang="es">HOA / Mantenimiento</li>
+            <li data-lang="en" style="display: none">HOA / Maintenance</li>
+            <li data-lang="es">Gas</li>
+            <li data-lang="en" style="display: none">Gas</li>
+            <li data-lang="es">Internet / Wifi</li>
+            <li data-lang="en" style="display: none">Internet / Wifi</li>
+          </ul>
         </div>
-        <div class="info-card">
-          <h3>Property Management</h3>
-          <span
-            >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-            porta in odio id mollis.</span
-          >
+
+        <div class="card">
+          <h3 data-lang="es">3. Inspección Quincenal</h3>
+          <h3 data-lang="en" style="display: none">3. Biweekly Inspection</h3>
+          <p data-lang="es">Revisión cada 15 días con reporte digital:</p>
+          <p data-lang="en" style="display: none">
+            Inspection every 15 days with digital report:
+          </p>
+          <ul>
+            <li data-lang="es">Electrodomésticos</li>
+            <li data-lang="en" style="display: none">Appliances</li>
+            <li data-lang="es">Aires acondicionados</li>
+            <li data-lang="en" style="display: none">Air conditioners</li>
+            <li data-lang="es">Iluminación, plomería, enchufes</li>
+            <li data-lang="en" style="display: none">
+              Lighting, plumbing, outlets
+            </li>
+            <li data-lang="es">Riego de plantas</li>
+            <li data-lang="en" style="display: none">Plant watering</li>
+            <li data-lang="es">Prevención de daños y plagas</li>
+            <li data-lang="en" style="display: none">
+              Damage and pest prevention
+            </li>
+          </ul>
         </div>
-        <div class="info-card">
-          <h3>Property Management</h3>
-          <span
-            >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-            porta in odio id mollis.</span
-          >
+
+        <div class="card">
+          <h3 data-lang="es">4. Gestión de Proveedores</h3>
+          <h3 data-lang="en" style="display: none">4. Vendor Management</h3>
+          <p data-lang="es">
+            Coordinamos servicios de limpieza, fumigación, pintura y
+            reparaciones con proveedores verificados.
+          </p>
+          <p data-lang="en" style="display: none">
+            We coordinate cleaning, fumigation, painting, and repairs with
+            verified vendors.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3 data-lang="es">5. Supervisión de Trabajos</h3>
+          <h3 data-lang="en" style="display: none">5. Work Supervision</h3>
+          <p data-lang="es">
+            Presencia en sitio para verificar calidad y finalización de
+            trabajos. Incluye fotos antes y después.
+          </p>
+          <p data-lang="en" style="display: none">
+            On-site presence to verify quality and completion of work. Includes
+            before and after photos.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3 data-lang="es">6. Estados Financieros</h3>
+          <h3 data-lang="en" style="display: none">6. Financial Statements</h3>
+          <p data-lang="es">Reporte mensual con:</p>
+          <p data-lang="en" style="display: none">Monthly report including:</p>
+          <ul>
+            <li data-lang="es">Gastos e ingresos</li>
+            <li data-lang="en" style="display: none">Expenses and income</li>
+            <li data-lang="es">Facturas y recibos</li>
+            <li data-lang="en" style="display: none">Invoices and receipts</li>
+            <li data-lang="es">Balance mensual</li>
+            <li data-lang="en" style="display: none">Monthly balance</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3 data-lang="es">
+            7. Acompañamiento Personalizado <span class="note">(opcional)</span>
+          </h3>
+          <h3 data-lang="en" style="display: none">
+            7. Personalized Assistance <span class="note">(optional)</span>
+          </h3>
+          <p data-lang="es">
+            Para adultos mayores o personas que requieren compañía.
+            Conversación, lectura o caminatas.
+          </p>
+          <p data-lang="en" style="display: none">
+            For seniors or those needing company. Conversation, reading, or
+            walks.
+          </p>
+          <p class="note" data-lang="es">
+            No es un servicio médico o especializado.
+          </p>
+          <p class="note" data-lang="en" style="display: none">
+            This is not a medical or specialized service.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3 data-lang="es">
+            8. Servicio de Compras <span class="note">(opcional)</span>
+          </h3>
+          <h3 data-lang="en" style="display: none">
+            8. Shopping Service <span class="note">(optional)</span>
+          </h3>
+          <p data-lang="es">
+            Compras de supermercado o artículos específicos bajo lista. Entrega
+            previa a la llegada del huésped.
+          </p>
+          <p data-lang="en" style="display: none">
+            Grocery or specific item shopping by list. Delivery prior to guest
+            arrival.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3 data-lang="es">Servicios Adicionales</h3>
+          <h3 data-lang="en" style="display: none">Additional Services</h3>
+          <ul>
+            <li data-lang="es">
+              <strong>Renta Vacacional / Largo Plazo:</strong> Publicación,
+              check-in/out y atención 24/7.
+            </li>
+            <li data-lang="en" style="display: none">
+              <strong>Vacation / Long Term Rental:</strong> Listing,
+              check-in/out and 24/7 support.
+            </li>
+
+            <li data-lang="es">
+              <strong>Decoración y Equipamiento:</strong> Mobiliario,
+              electrodomésticos y accesorios.
+            </li>
+            <li data-lang="en" style="display: none">
+              <strong>Decoration and Furnishing:</strong> Furniture, appliances,
+              and accessories.
+            </li>
+
+            <li data-lang="es">
+              <strong>Limpieza Preventiva:</strong> Antes de estancias o
+              visitas.
+            </li>
+            <li data-lang="en" style="display: none">
+              <strong>Preventive Cleaning:</strong> Before stays or visits.
+            </li>
+
+            <li data-lang="es">
+              <strong>Traducción Español/Inglés:</strong> Apoyo con trámites o
+              documentos.
+            </li>
+            <li data-lang="en" style="display: none">
+              <strong>Spanish/English Translation:</strong> Assistance with
+              paperwork or documents.
+            </li>
+
+            <li data-lang="es">
+              <strong>Seguros o Asesoría Legal:</strong> En colaboración con
+              expertos.
+            </li>
+            <li data-lang="en" style="display: none">
+              <strong>Insurance or Legal Advice:</strong> In collaboration with
+              experts.
+            </li>
+          </ul>
         </div>
       </div>
     </section>
 
     <!-- FOOTER -->
     <footer class="footer">
-      <div class="footer-content">
-        <p>&copy; 2025 HomeFinder. All rights reserved.</p>
+      <div class="footer-main">
+        <div class="footer-left">
+          <img
+            src="/public/aura_properties_logo_removedbg.png"
+            alt="Aura Properties Logo"
+            class="footer-logo"
+          />
+        </div>
+        <div class="footer-right">
+          <nav class="footer-nav">
+            <a href="#about" data-lang="es">Quiénes Somos</a>
+            <a href="#about" data-lang="en" style="display: none">About Us</a>
+
+            <a href="#services" data-lang="es">Servicios</a>
+            <a href="#services" data-lang="en" style="display: none"
+              >Services</a
+            >
+
+            <a href="#contact" data-lang="es">Contacto</a>
+            <a href="#contact" data-lang="en" style="display: none">Contact</a>
+
+            <a href="#blog" data-lang="es">Blog</a>
+            <a href="#blog" data-lang="en" style="display: none">Blog</a>
+          </nav>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p data-lang="es">Aura Properties &copy; 2025</p>
+        <p data-lang="en" style="display: none">Aura Properties &copy; 2025</p>
       </div>
     </footer>
+
+    <button id="langToggleBtn" aria-label="Toggle language">ES</button>
     <script src="index.js"></script>
   </body>
 </html>

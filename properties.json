@@ -4,41 +4,179 @@
     "city": "Puerto Vallarta",
     "neighborhood": "Zona Romántica",
     "zip": "48380",
-    "address": "Calle Olas Altas 123"
+    "address": "Calle Olas Altas 123",
+    "bedrooms": "1 Recámara",
+    "price_usd": "$110 - $2000"
   },
   {
     "id": 2,
     "city": "Puerto Vallarta",
     "neighborhood": "Marina Vallarta",
     "zip": "48335",
-    "address": "Avenida Paseo de la Marina 456"
+    "address": "Avenida Paseo de la Marina 456",
+    "bedrooms": "2 Recámaras",
+    "price_usd": "$125 - $2500"
   },
   {
     "id": 3,
     "city": "Puerto Vallarta",
     "neighborhood": "Versalles",
     "zip": "48310",
-    "address": "Calle Francia 789"
+    "address": "Calle Francia 789",
+    "bedrooms": "3 Recámaras",
+    "price_usd": "$140 - $3000"
   },
   {
     "id": 4,
-    "city": "Nayarit",
-    "neighborhood": "Bucerías",
-    "zip": "63732",
-    "address": "Calle Estaciones 321"
+    "city": "Puerto Vallarta",
+    "neighborhood": "Conchas Chinas",
+    "zip": "48399",
+    "address": "Camino de la Rivera 812",
+    "bedrooms": "PH y más",
+    "price_usd": "$180 - $3500"
   },
   {
     "id": 5,
     "city": "Nayarit",
-    "neighborhood": "La Cruz de Huanacaxtle",
-    "zip": "63734",
-    "address": "Camino Viejo al Valle 654"
+    "neighborhood": "Bucerías",
+    "zip": "63732",
+    "address": "Calle Estaciones 321",
+    "bedrooms": "1 Recámara",
+    "price_usd": "$120 - $2400"
   },
   {
     "id": 6,
     "city": "Nayarit",
+    "neighborhood": "La Cruz de Huanacaxtle",
+    "zip": "63734",
+    "address": "Camino Viejo al Valle 654",
+    "bedrooms": "2 Recámaras",
+    "price_usd": "$135 - $2700"
+  },
+  {
+    "id": 7,
+    "city": "Nayarit",
     "neighborhood": "Punta de Mita",
     "zip": "63734",
-    "address": "Avenida Las Palmas 222"
+    "address": "Avenida Las Palmas 222",
+    "bedrooms": "3 Recámaras",
+    "price_usd": "$150 - $3300"
+  },
+  {
+    "id": 8,
+    "city": "Nayarit",
+    "neighborhood": "Litibú",
+    "zip": "63734",
+    "address": "Lote 6 Litibú",
+    "bedrooms": "PH y más",
+    "price_usd": "$200 - $4000"
+  },
+  {
+    "id": 9,
+    "city": "Puerto Vallarta",
+    "neighborhood": "5 de Diciembre",
+    "zip": "48350",
+    "address": "Calle Paraguay 130",
+    "bedrooms": "1 Recámara",
+    "price_usd": "$110 - $2000"
+  },
+  {
+    "id": 10,
+    "city": "Puerto Vallarta",
+    "neighborhood": "Hotel Zone",
+    "zip": "48333",
+    "address": "Av. Francisco Medina Ascencio 1001",
+    "bedrooms": "2 Recámaras",
+    "price_usd": "$125 - $2500"
+  },
+  {
+    "id": 11,
+    "city": "Puerto Vallarta",
+    "neighborhood": "Centro",
+    "zip": "48300",
+    "address": "Morelos 145",
+    "bedrooms": "3 Recámaras",
+    "price_usd": "$140 - $3000"
+  },
+  {
+    "id": 12,
+    "city": "Puerto Vallarta",
+    "neighborhood": "Amapas",
+    "zip": "48399",
+    "address": "Calle Hortensias 98",
+    "bedrooms": "PH y más",
+    "price_usd": "$180 - $3500"
+  },
+  {
+    "id": 13,
+    "city": "Nayarit",
+    "neighborhood": "Nuevo Vallarta",
+    "zip": "63735",
+    "address": "Boulevard Nuevo Vallarta 130",
+    "bedrooms": "1 Recámara",
+    "price_usd": "$120 - $2400"
+  },
+  {
+    "id": 14,
+    "city": "Nayarit",
+    "neighborhood": "Flamingos",
+    "zip": "63732",
+    "address": "Av. Las Palmas 445",
+    "bedrooms": "2 Recámaras",
+    "price_usd": "$135 - $2700"
+  },
+  {
+    "id": 15,
+    "city": "Nayarit",
+    "neighborhood": "San Pancho",
+    "zip": "63729",
+    "address": "Calle América Latina 55",
+    "bedrooms": "3 Recámaras",
+    "price_usd": "$150 - $3300"
+  },
+  {
+    "id": 16,
+    "city": "Nayarit",
+    "neighborhood": "Sayulita",
+    "zip": "63734",
+    "address": "Revolución 77",
+    "bedrooms": "PH y más",
+    "price_usd": "$200 - $4000"
+  },
+  {
+    "id": 17,
+    "city": "Puerto Vallarta",
+    "neighborhood": "Gaviotas",
+    "zip": "48328",
+    "address": "Calle Pelicanos 99",
+    "bedrooms": "1 Recámara",
+    "price_usd": "$110 - $2000"
+  },
+  {
+    "id": 18,
+    "city": "Puerto Vallarta",
+    "neighborhood": "Aralias",
+    "zip": "48328",
+    "address": "Calle Niza 104",
+    "bedrooms": "2 Recámaras",
+    "price_usd": "$125 - $2500"
+  },
+  {
+    "id": 19,
+    "city": "Puerto Vallarta",
+    "neighborhood": "Las Glorias",
+    "zip": "48333",
+    "address": "Hamburgo 20",
+    "bedrooms": "3 Recámaras",
+    "price_usd": "$140 - $3000"
+  },
+  {
+    "id": 20,
+    "city": "Puerto Vallarta",
+    "neighborhood": "El Caloso",
+    "zip": "48360",
+    "address": "Calle Aquiles Serdán 13",
+    "bedrooms": "PH y más",
+    "price_usd": "$180 - $3500"
   }
 ]

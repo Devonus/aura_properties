@@ -23,7 +23,7 @@ body {
 h1, h2, h3, h4, h5, h6, .logo {
   font-family: var(--font-heading);
   font-weight: 700;
-  color: white; /* slightly darker for headings */
+  color: #1A2B4C; /* slightly darker for headings */
   margin-bottom: 0.5em;
 }
 
@@ -205,6 +205,10 @@ a:hover {
     color: white;
     text-align: center;
   }
+
+  .hero-overlay  h1 {
+    color: white;
+  }
   
   .hero h1 {
     font-size: 2.5rem;
@@ -298,6 +302,35 @@ a:hover {
 .hidden {
   display: none;
 }
+
+/* ABOUT SECTION  */
+
+  .about-section {
+    background-color: #f8f8f8;
+    padding: 60px 20px;
+    color: #242424;
+    font-family: 'Lato', sans-serif;
+  }
+
+  .about-section .container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .about-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    font-family: 'Playfair Display', serif;
+    color: #1a1a1a;
+  }
+
+  .about-section p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+  }
+
 
 
   /* MAIN CONTENT */
@@ -460,15 +493,43 @@ height: 200px;
 
 
 
-  /* FOOTER */
   .footer {
-    background: #222;
-    color: #fff;
-    text-align: center;
-    padding: 2rem 0;
-    margin-top: 4rem;
+    background-color: #FFFAFA;
+    font-family: 'Lato', sans-serif;
   }
-  
+
+  .footer-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px 15px;
+  }
+
+  .footer-logo {
+    height: 50px;
+    width: auto;
+  }
+
+  .footer-nav a {
+    color: #242424;
+    margin-left: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+  }
+
+  .footer-nav a:hover {
+    color: #a0d468; /* a light green highlight */
+  }
+
+  .footer-bottom {
+    text-align: center;
+    padding: 12px 0;
+    font-size: 0.9rem;
+    background-color: #FFFAFA;
+  }
   
   /* Show nav links when toggled */
   .nav-links.open {
@@ -479,7 +540,56 @@ height: 200px;
 
 
 
+/* --------------------------
+SERVICE SECTION 
+---------------------------- */
+    .section {
+      padding: 80px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
 
+    .section h2 {
+      font-size: 36px;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+      background-color: #fafafa;
+    }
+
+    .card h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .card p,
+    .card ul {
+      font-size: 15px;
+      line-height: 1.5;
+    }
+
+    .card ul {
+      margin-top: 10px;
+      padding-left: 20px;
+    }
+
+    .note {
+      font-size: 14px;
+      font-style: italic;
+      color: #555;
+    }
   /* ==================== RESPONSIVE STYLES ==================== */
 @media (max-width: 768px) {
 
@@ -569,8 +679,46 @@ height: 200px;
     margin: 0 auto;
   }
 
-  /* FOOTER */
-  .footer {
-    padding: 1.5rem 1rem;
-  }
+    .footer-main {
+      flex-direction: column;
+      gap: 15px;
+      text-align: center;
+    }
+
+    .footer-nav a {
+      margin: 0 10px;
+      display: inline-block;
+    }
+
+      .about-section h2 {
+      font-size: 2rem;
+    }
+
+    .about-section p {
+      font-size: 1rem;
+    }
 }
+
+
+
+
+  #langToggleBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #242424;
+    color: #e8ede4;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-family: 'Lato', sans-serif;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    transition: background-color 0.3s ease;
+    z-index: 1000;
+  }
+  #langToggleBtn:hover {
+    background-color: #a0d468;
+    color: #242424;
+  }

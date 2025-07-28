@@ -87,3 +87,52 @@ input.addEventListener("input", function () {
   suggestionsBox.innerHTML = html;
   suggestionsBox.classList.remove("hidden");
 });
+
+// english to spanish button
+const btn = document.getElementById("langToggleBtn");
+let currentLang = "en"; // Start in English
+
+btn.addEventListener("click", () => {
+  const spanishElems = document.querySelectorAll('[data-lang="es"]');
+  const englishElems = document.querySelectorAll('[data-lang="en"]');
+
+  if (currentLang === "en") {
+    // Switch to Spanish
+    spanishElems.forEach((el) => (el.style.display = "block"));
+    englishElems.forEach((el) => (el.style.display = "none"));
+    btn.textContent = "EN"; // Show EN button to switch back
+    btn.setAttribute("aria-label", "Switch to English");
+
+    // Update placeholder and button text for Spanish
+    const searchInput = document.getElementById("searchInput");
+    const searchBtn = document.getElementById("searchBtn");
+    if (searchInput) {
+      searchInput.placeholder = "Buscar por ciudad, colonia o código postal...";
+    }
+    if (searchBtn) {
+      searchBtn.textContent = "Buscar";
+    }
+
+    currentLang = "es";
+    document.documentElement.lang = "es";
+  } else {
+    // Switch to English
+    spanishElems.forEach((el) => (el.style.display = "none"));
+    englishElems.forEach((el) => (el.style.display = "block"));
+    btn.textContent = "ES"; // Show ES button to switch back
+    btn.setAttribute("aria-label", "Switch to Spanish");
+
+    // Update placeholder and button text for English
+    const searchInput = document.getElementById("searchInput");
+    const searchBtn = document.getElementById("searchBtn");
+    if (searchInput) {
+      searchInput.placeholder = "Search by city, neighborhood, or zip...";
+    }
+    if (searchBtn) {
+      searchBtn.textContent = "Search";
+    }
+
+    currentLang = "en";
+    document.documentElement.lang = "en";
+  }
+});
