@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Property Listings</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Merriweather:wght@400;700&family=Inter:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- NAVIGATION -->
+    <header class="navbar">
+      <div class="nav-container">
+        <div class="logo">
+          <img class="logo-img" src="./public/aura_properties_corrected.png" />
+        </div>
+
+        <!-- Hamburger -->
+        <button
+          class="nav-toggle"
+          id="nav-toggle"
+          aria-label="Toggle Navigation"
+        >
+          &#9776;
+        </button>
+      </div>
+
+      <!-- Nav links OUTSIDE container -->
+      <nav class="nav-links" id="nav-links">
+        <a href="#about">Buy</a>
+        <a href="#process">Rent</a>
+        <a href="#materials">Sell</a>
+        <a href="#faq">Agents</a>
+        <a href="#contact">About</a>
+      </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+      <div class="hero-overlay">
+        <h1>The Top Properties For Sale</h1>
+        <p>
+          The place to find your properties for sale in Puerto Vallarata and
+          Riviera Nayarit
+        </p>
+        <div class="search-wrapper" style="position: relative; width: 100%">
+          <form class="search-form">
+            <input
+              type="text"
+              placeholder="Search by city, neighborhood, or zip..."
+              id="searchInput"
+            />
+            <button type="submit">Search</button>
+          </form>
+
+          <div id="suggestions" class="suggestion-box hidden"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED FILTERS -->
+    <section class="filters">
+      <div class="filter-item">For Sale</div>
+      <div class="filter-item">For Rent</div>
+      <div class="filter-item">Open Houses</div>
+      <div class="filter-item">New Listings</div>
+      <div class="filter-item">Luxury</div>
+    </section>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+      <section class="property-list">
+        <div class="property-card">
+          <img src="./public/house1.png" alt="House 1" />
+          <h3>$2,100,000</h3>
+          <p>4 Bed • 3 Bath • 2,800 sqft</p>
+          <p>Los Angeles, CA</p>
+        </div>
+        <div class="property-card">
+          <img src="./public/house2.png" alt="House 2" />
+          <h3>$1,350,000</h3>
+          <p>3 Bed • 2 Bath • 2,100 sqft</p>
+          <p>Miami, FL</p>
+        </div>
+        <div class="property-card">
+          <img src="./public/house1.png" alt="House 1" />
+          <h3>$2,100,000</h3>
+          <p>4 Bed • 3 Bath • 2,800 sqft</p>
+          <p>Los Angeles, CA</p>
+        </div>
+        <div class="property-card">
+          <img src="./public/house2.png" alt="House 2" />
+          <h3>$1,350,000</h3>
+          <p>3 Bed • 2 Bath • 2,100 sqft</p>
+          <p>Miami, FL</p>
+        </div>
+        <!-- Add more property cards -->
+      </section>
+
+      <aside class="sidebar">
+        <div class="map-preview">
+          <h4>Explore by Map</h4>
+          <img src="./public/map.png" alt="Map Preview" />
+        </div>
+        <div class="news-box">
+          <h4>Latest Real Estate News</h4>
+          <p>Check out the latest trends and insights.</p>
+        </div>
+      </aside>
+    </main>
+
+    <section class="couple-section">
+      <!-- Left Content -->
+      <div class="left-pane">
+        <div class="left-content">
+          <h1>Find the Right Selling Option</h1>
+          <p>We're here to help you</p>
+        </div>
+      </div>
+
+      <!-- Right Content -->
+      <div class="right-pane">
+        <img src="./public/couple.png" alt="Couple embracing" />
+      </div>
+
+      <!-- Center Floating Cards -->
+      <div class="center-overlay">
+        <div class="info-card">
+          <h3>Property Management</h3>
+          <span
+            >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+            porta in odio id mollis.</span
+          >
+        </div>
+        <div class="info-card">
+          <h3>Property Management</h3>
+          <span
+            >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+            porta in odio id mollis.</span
+          >
+        </div>
+        <div class="info-card">
+          <h3>Property Management</h3>
+          <span
+            >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+            porta in odio id mollis.</span
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-content">
+        <p>&copy; 2025 HomeFinder. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>

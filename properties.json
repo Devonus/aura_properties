@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "city": "Puerto Vallarta",
+    "neighborhood": "Zona Romántica",
+    "zip": "48380",
+    "address": "Calle Olas Altas 123"
+  },
+  {
+    "id": 2,
+    "city": "Puerto Vallarta",
+    "neighborhood": "Marina Vallarta",
+    "zip": "48335",
+    "address": "Avenida Paseo de la Marina 456"
+  },
+  {
+    "id": 3,
+    "city": "Puerto Vallarta",
+    "neighborhood": "Versalles",
+    "zip": "48310",
+    "address": "Calle Francia 789"
+  },
+  {
+    "id": 4,
+    "city": "Nayarit",
+    "neighborhood": "Bucerías",
+    "zip": "63732",
+    "address": "Calle Estaciones 321"
+  },
+  {
+    "id": 5,
+    "city": "Nayarit",
+    "neighborhood": "La Cruz de Huanacaxtle",
+    "zip": "63734",
+    "address": "Camino Viejo al Valle 654"
+  },
+  {
+    "id": 6,
+    "city": "Nayarit",
+    "neighborhood": "Punta de Mita",
+    "zip": "63734",
+    "address": "Avenida Las Palmas 222"
+  }
+]
